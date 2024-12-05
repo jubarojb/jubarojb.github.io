@@ -1,0 +1,121 @@
+:root {
+  --bg-color1:#FF204E;
+  --bg-color2:#A0153E;
+  --bg-color3:#5D0E41;
+  --bg-color4:#00224D;
+  --bg-color5: rgba(255,255,255,0.6);
+  --bg-color6: rgba(255,255,255,0);
+}
+
+a {
+  color:white;
+  text-decoration:none;
+}
+
+/* HEADER ------------------------*/
+#header-img{
+  margin:6em auto 1em auto;
+  display:block;
+  width:80%;
+  min-width:300px;
+  aspect-ratio: 35 / 4;
+  padding: 0.4rem;
+
+
+}
+#nav-bar {
+  position:fixed;
+  top:0px;
+  background:linear-gradient(180deg, var(--bg-color4), var(--bg-color3));
+  width:100%;
+}
+#nav-bar ul {
+  list-style:none;
+  margin:0; 
+  padding:2em;
+  display:flex;
+  justify-content:right;
+  gap:1em;  
+}
+.nav-link {
+  padding:2em;
+}
+.nav-link:hover{
+  background:var(--bg-color1);
+}
+
+/* BODY ---------------------------*/
+body {
+  background:linear-gradient(180deg, var(--bg-color1) 10%, var(--bg-color2));
+  margin:0;
+  padding:0;
+  font-family:Verdana, sans-serif;
+  color: var(--bg-color4);
+}
+
+main {
+  background:var(--bg-color5);
+  width:60vw;  
+  min-width:300px;
+  margin:0 auto;
+  padding:2rem;
+  border-radius:20px;
+  margin-bottom:5rem;
+}
+
+#form {
+  text-align:center;
+  background:linear-gradient(180deg, var(--bg-color5), var(--bg-color6));
+  border-radius:10px;
+  padding:2rem;
+}
+
+label {
+  font-family: "Lucida Console", Courier, monospace;
+  font-size:1.5rem;
+  margin-bottom:5rem;
+}
+
+.mail-send {
+  width:100%;
+  max-width:300px;
+  margin:15px auto;
+  display: flex;
+  flex-direction: column;
+}
+input[type="submit"]{
+  padding:10px 0;
+}
+
+h2 {
+  background:linear-gradient(180deg, var(--bg-color5), var(--bg-color6));
+  padding:1rem;
+  border-radius:10px 10px 0 0;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.video-container {
+  display:flex;
+  justify-content:center;
+  width:100%;
+}
+
+footer{
+  text-align:center;
+  color:white;
+  opacity:0.5;
+}
+
+footer a:hover {
+  text-decoration:underline;
+}
+
+
+/* MEDIA --------------------------*/
+@media (max-width:600px){
+  #nav-bar ul {
+    justify-content: space-between;
+    gap: 0;
+    padding:2em 0;
+  }
+}
