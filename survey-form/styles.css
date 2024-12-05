@@ -1,0 +1,47 @@
+:root {
+  --bg-color1: #A59D84;
+  --bg-color2: #C1BAA1;
+  --bg-color3: #D7D3BF;
+  --text-color: #493628;
+}
+
+body{
+  /*background-color: var(--bg-color1);*/
+  background:linear-gradient(180deg, var(--bg-color1) 10%, var(--bg-color2));
+  font-family:sans-serif;
+  color: var(--text-color);
+}
+h1, #description {
+  text-align: center;
+}
+
+form {
+  width: 80%;
+  max-width: 500px;
+  margin:0 auto;
+  background-color: var(--bg-color2);
+  padding:2em;
+}
+
+fieldset {
+  border-color: var(--bg-color3);
+  margin:1em 0
+}
+
+input {
+  height:2em;
+  display:block;
+  margin-bottom:1em
+}
+select {
+  height: 2em;
+}
+
+input[type="radio"], input[type="checkbox"]  {
+  display:unset;
+}
+
+#submit {
+  width:100%;
+  
+}
